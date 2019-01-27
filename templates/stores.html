@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load bootstrap_form from bootstrap4 %}
+{% block title %}Stores— {{ block.super }}{% endblock %}
+{% block header %}
+	<div class="container navbar__login">
+	</div>
+	<header class="checkout__header">
+		<div class="container">
+			<a href="/">
+				<img src="{% static "images/logo.png" %}" height="100px" width="150px" />
+				</a>	
+				<h1>&nbsp;&nbsp;Stores</h1>
+			</div>
+		</header>
+		<br>
+		<br>
+
+
+	{% endblock %}
+	{% block content %}
+	<section class="ps-section ps-section--list-product pt-40 pb-80 mpb-80">
+		<div class="container">
+			<div class="ps-section__header text-center mb-100">
+				<!--  <h3 class="ps-section__title ps-section__title--full">Stores</h3>  -->
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div style="text-align: center; ">
+						<a href="/belly/">
+							<img class="sellerImg" onerror="if (this.src != '') this.src = 'images/brand.jpg';" src="https://images.plexussquare.in/MMC/Images/27-10-2018/1540628046343.png" alt="" style="height:100px; width:200px">
+						</a>
+						<a class="seller_list_seller mseller" href="/belly/">
+						HAPPY BELLY BAKES                           </a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div style="text-align: center;">
+						<a href="/brownie/">
+							<img class="sellerImg" onerror="if (this.src != '') this.src = 'images/brand.jpg';" src="https://images.plexussquare.in/MMC/Images/17-12-2018/1545048658770.png" alt="" style="height:100px; width:200px">
+						</a>
+						<a class="seller_list_seller mseller" href="/brownie/">
+						BROWNIE HEAVEN                            </a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div style="text-align: center;">
+						<a href="/spoonful/">
+							<img class="sellerImg" onerror="if (this.src != '') this.src = 'images/brand.jpg';" src="https://images.plexussquare.in/MMC/Images/17-12-2018/1545048632464.PNG" alt="" style="height:100px; width:200px">
+						</a>
+						<a class="seller_list_seller mseller" href="/spoonful/">
+						SPOONFUL OF SUGAR                            </a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div style="text-align: center;">
+						<a href="/glen/	">
+							<img class="sellerImg" onerror="if (this.src != '') this.src = 'images/brand.jpg';" src="https://images.plexussquare.in/MMC/Images/17-12-2018/1545048541219.jpg" alt="" style="height:95px; width:200px">
+						</a>
+						<a class="seller_list_seller mseller" href="/glen/">
+						GLENS BAKE HOUSE (INDIRANAGAR)                            </a>
+					</div>
+				</div>
+				</div>
+				<!--  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div style="text-align: center;">
+						<a href="shop.php?sid=359&amp;catn=BROWNIE HEAVEN">
+							<img class="sellerImg" onerror="if (this.src != '') this.src = 'images/brand.jpg';" src="https://images.plexussquare.in/MMC/Images/17-12-2018/1545048658770.png" alt="" style="height:100px; width:200px">
+						</a>
+						<a class="seller_list_seller mseller" href="shop.php?sid=359&amp;catn=BROWNIE HEAVEN">
+						BROWNIE HEAVEN                            </a>
+					</div>
+				</div>  -->
+				
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+
